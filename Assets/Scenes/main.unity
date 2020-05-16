@@ -158,8 +158,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -86, y: -37}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -60, y: -60}
+  m_SizeDelta: {x: 83.71, y: 61.09}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &285859852
 MonoBehaviour:
@@ -730,8 +730,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1760703bbd54c04488a8d10600262ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_PlanePrefab: {fileID: 7272423110338897802, guid: eb0ded81a88849841a30984dfca8231f,
-    type: 3}
+  m_PlanePrefab: {fileID: 0}
   m_DetectionMode: -1
 --- !u!114 &1538885617
 MonoBehaviour:
@@ -785,7 +784,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b4877a29e81a384883f82e58e547a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _prefab: {fileID: 8178472353307192535, guid: d4ce9d7671ec4594fb13ae292aed4190, type: 3}
+  _prefab: {fileID: -927199367670048503, guid: 1258d82bc887dab45b8d140ef280d011, type: 3}
 --- !u!1 &1683123899
 GameObject:
   m_ObjectHideFlags: 0

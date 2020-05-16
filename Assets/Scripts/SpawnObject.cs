@@ -9,6 +9,7 @@ public class SpawnObject : MonoBehaviour
 {
     [SerializeField]
     private GameObject _prefab;
+    private GameObject _criado;
     private ARRaycastManager _gerenciadorRayCast;
     private Vector2 _posicaoToque;
 
@@ -35,10 +36,19 @@ public class SpawnObject : MonoBehaviour
         {
             return;
         }
+
         if(_gerenciadorRayCast.Raycast(_posicaoToque, acertos, TrackableType.PlaneWithinPolygon))
         {
             var lugar = acertos[0].pose;
-            Instantiate(_prefab, lugar.position, lugar.rotation);
+
+            if(_criado == null)
+            {
+                _criado = Instantiate(_prefab, lugar.position, lugar.rotation);
+            }
+            else
+            {
+                _criado.transform.position = lugar.position;
+            }
         }
     }
 }

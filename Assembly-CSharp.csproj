@@ -62,6 +62,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\OBJImport\CharWordReader.cs" />
+    <Compile Include="Assets\OBJImport\MTLLoader.cs" />
+    <Compile Include="Assets\OBJImport\OBJLoader.cs" />
+    <Compile Include="Assets\OBJImport\OBJLoaderHelper.cs" />
+    <Compile Include="Assets\OBJImport\OBJObjectBuilder.cs" />
+    <Compile Include="Assets\OBJImport\Samples\ObjFromFile.cs" />
+    <Compile Include="Assets\OBJImport\Samples\ObjFromStream.cs" />
+    <Compile Include="Assets\OBJImport\StringExtensions.cs" />
+    <Compile Include="Assets\OBJImport\TextureLoader\BMPLoader.cs" />
+    <Compile Include="Assets\OBJImport\TextureLoader\BinaryExtensions.cs" />
+    <Compile Include="Assets\OBJImport\TextureLoader\ColorExtensions.cs" />
+    <Compile Include="Assets\OBJImport\TextureLoader\DDSLoader.cs" />
+    <Compile Include="Assets\OBJImport\TextureLoader\ImageLoader.cs" />
+    <Compile Include="Assets\OBJImport\TextureLoader\ImageLoaderHelper.cs" />
+    <Compile Include="Assets\OBJImport\TextureLoader\ImageUtils.cs" />
+    <Compile Include="Assets\OBJImport\TextureLoader\TGALoader.cs" />
     <Compile Include="Assets\Scripts\Cor.cs" />
     <Compile Include="Assets\Scripts\SpawnObject.cs" />
     <Compile Include="Assets\Scripts\VrMode.cs" />
