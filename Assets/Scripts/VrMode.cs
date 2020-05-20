@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class VrMode : MonoBehaviour
 {
+    [SerializeField]
+    private Canvas uiCanvas;
     public void ModoVR()
     {
+        uiCanvas.enabled = false;
         StartCoroutine(ActivateVR());
     }
     IEnumerator ActivateVR()
@@ -19,6 +22,20 @@ public class VrMode : MonoBehaviour
 
         UnityEngine.XR.XRSettings.enabled = true;
     }
-    // Update is called once per frame
+
+    IEnumerator ExitVR()
+    {
+        UnityEngine.XR.XRSettings.LoadDeviceByName("");
+        yield return null;
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            StartCoroutine(ExitVR());
+            uiCanvas.enabled = true;
+        }
+    }
 
 }

@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
@@ -11,12 +10,13 @@ public class SpawnObject : MonoBehaviour
     private GameObject _prefab;
     private GameObject _criado;
     private ARRaycastManager _gerenciadorRayCast;
-    private Vector2 _posicaoToque;
+    private EfeitosObjeto _gameManager;
 
     static List<ARRaycastHit> acertos = new List<ARRaycastHit>();
     private void Awake()
     {
         _gerenciadorRayCast = GetComponent<ARRaycastManager>();
+        _gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<EfeitosObjeto>();
     }
 
     bool PegarPosicaoToque(out Vector2 _posicaoToque)
@@ -36,7 +36,7 @@ public class SpawnObject : MonoBehaviour
         {
             return;
         }
-
+ 
         if(_gerenciadorRayCast.Raycast(_posicaoToque, acertos, TrackableType.PlaneWithinPolygon))
         {
             var lugar = acertos[0].pose;
@@ -44,6 +44,7 @@ public class SpawnObject : MonoBehaviour
             if(_criado == null)
             {
                 _criado = Instantiate(_prefab, lugar.position, lugar.rotation);
+                _gameManager.ObjetoCriado = _criado;
             }
             else
             {
