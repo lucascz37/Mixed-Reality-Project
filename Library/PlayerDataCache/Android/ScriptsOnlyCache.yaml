@@ -1,7 +1,9 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - ButtonScript
     - EfeitosObjeto
+    - GetFiles
     - SpawnObject
     - VrMode
     Unity.Rider.Editor.dll:
@@ -30,6 +32,9 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.Mask
+    - UnityEngine.UI.ScrollRect
+    - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/main.unity:
@@ -41,13 +46,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
-    - Class: 23
-      Script: {instanceID: 0}
     - Class: 28
-      Script: {instanceID: 0}
-    - Class: 33
-      Script: {instanceID: 0}
-    - Class: 43
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
@@ -64,6 +63,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11370}
     - Class: 114
+      Script: {instanceID: 11374}
+    - Class: 114
       Script: {instanceID: 11416}
     - Class: 114
       Script: {instanceID: 11456}
@@ -74,31 +75,39 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11770}
     - Class: 114
+      Script: {instanceID: 11792}
+    - Class: 114
       Script: {instanceID: 11812}
     - Class: 114
       Script: {instanceID: 11904}
     - Class: 114
+      Script: {instanceID: 12148}
+    - Class: 114
       Script: {instanceID: 12292}
     - Class: 114
-      Script: {instanceID: 12394}
+      Script: {instanceID: 12300}
     - Class: 114
-      Script: {instanceID: 12600}
+      Script: {instanceID: 12396}
     - Class: 114
-      Script: {instanceID: 12662}
+      Script: {instanceID: 12602}
     - Class: 114
-      Script: {instanceID: 12862}
+      Script: {instanceID: 12664}
     - Class: 114
-      Script: {instanceID: 12938}
+      Script: {instanceID: 12864}
     - Class: 114
-      Script: {instanceID: 12988}
+      Script: {instanceID: 12940}
     - Class: 114
-      Script: {instanceID: 13012}
+      Script: {instanceID: 12990}
     - Class: 114
-      Script: {instanceID: 13188}
+      Script: {instanceID: 13014}
     - Class: 114
-      Script: {instanceID: 13324}
+      Script: {instanceID: 13190}
     - Class: 114
-      Script: {instanceID: 13428}
+      Script: {instanceID: 13326}
+    - Class: 114
+      Script: {instanceID: 13342}
+    - Class: 114
+      Script: {instanceID: 13432}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -250,7 +259,7 @@ ScriptsOnlyBuild:
     className: SignalAsset
   - hash:
       serializedVersion: 2
-      Hash: aad690be56e4265f5de9f49a27456cf4
+      Hash: c1cb776752d0cc6f97f326c5ccddcd2e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SpawnObject
@@ -428,6 +437,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
     className: ARPointCloud
+  - hash:
+      serializedVersion: 2
+      Hash: 02dbb797ddf7fd281ea5361e37dade9c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ButtonScript
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -670,6 +685,12 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
+      Hash: a74912ed0f38eea77007c310cb24a16c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GetFiles
+  - hash:
+      serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -761,4 +782,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/main.unity
-  playerPath: C:/Users/lucas/Documents/GitHub/Builds MRP/Build Teste 02.apk
+  playerPath: "C:/Users/lucas/Documents/GitHub/Builds MRP/Build Vers\xE3o 1.apk"

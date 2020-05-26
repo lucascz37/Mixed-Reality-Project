@@ -6,12 +6,14 @@ using UnityEngine;
 public class ObjFromStream : MonoBehaviour {
 	void Start () {
         //make www
-        var www = new WWW("https://people.sc.fsu.edu/~jburkardt/data/obj/lamp.obj");
+        var www = new WWW("localhost:3000/phone.obj");
+        var www2 = new WWW("localhost:3000/phone.mtl");
         while (!www.isDone)
             System.Threading.Thread.Sleep(1);
         
         //create stream and load
         var textStream = new MemoryStream(Encoding.UTF8.GetBytes(www.text));
-        var loadedObj = new OBJLoader().Load(textStream);
+        var mtlStream = new MemoryStream(Encoding.UTF8.GetBytes(www2.text));
+        var loadedObj = new OBJLoader().Load(textStream, mtlStream);
 	}
 }
