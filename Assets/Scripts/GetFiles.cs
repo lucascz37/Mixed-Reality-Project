@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class GetFiles : MonoBehaviour
 {
     private files _objetos;
+    private float maxRool = 0;
 
     [SerializeField]
     private GameObject _Buttonprefab;
@@ -19,7 +20,7 @@ public class GetFiles : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        transform.localPosition = new Vector3(transform.localPosition.x, Mathf.Clamp(transform.localPosition.y, 0, maxRool), 0);
     }
 
     IEnumerator GetRequest(string uri)
@@ -55,7 +56,8 @@ public class GetFiles : MonoBehaviour
             if (file.Contains(".obj"))
             {
                 _Buttonprefab.GetComponentInChildren<Text>().text = file.Replace(".obj", "");
-                Instantiate(_Buttonprefab, transform).transform.position = new Vector3(307,-(i*25)+200,0);
+                Instantiate(_Buttonprefab, transform).transform.localPosition = new Vector3(100,-(i*150)-50,0);
+                maxRool = (i*150)-100;
             }
         }
     }

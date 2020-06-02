@@ -68,8 +68,6 @@
     <Compile Include="Assets\OBJImport\OBJLoader.cs" />
     <Compile Include="Assets\OBJImport\OBJLoaderHelper.cs" />
     <Compile Include="Assets\OBJImport\OBJObjectBuilder.cs" />
-    <Compile Include="Assets\OBJImport\Samples\ObjFromFile.cs" />
-    <Compile Include="Assets\OBJImport\Samples\ObjFromStream.cs" />
     <Compile Include="Assets\OBJImport\StringExtensions.cs" />
     <Compile Include="Assets\OBJImport\TextureLoader\BMPLoader.cs" />
     <Compile Include="Assets\OBJImport\TextureLoader\BinaryExtensions.cs" />

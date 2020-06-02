@@ -12,6 +12,27 @@ public class EfeitosObjeto : MonoBehaviour
         set => _objetoCriado = value;
     }
 
+    private bool _rotacionar = false;
+    private void Update()
+    {
+        if (_rotacionar && _objetoCriado != null)
+        {
+            _objetoCriado.transform.Rotate(0, 5 * Time.deltaTime, 0);
+        }
+    }
+
+    public void Rotacionar()
+    {
+        if (_rotacionar)
+        {
+            _rotacionar = false;
+        }
+        else
+        {
+            _rotacionar = true;
+        }
+    }
+
     public void AumentarTamanho()
     {
         if (_objetoCriado != null)

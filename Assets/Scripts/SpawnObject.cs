@@ -6,6 +6,7 @@ using System.IO;
 using System.Net;
 using System.Text;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.Networking;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
@@ -13,6 +14,10 @@ using UnityEngine.XR.ARSubsystems;
 [RequireComponent(typeof(ARRaycastManager))]
 public class SpawnObject : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject _loading;
+    [SerializeField]
+    private GameObject _done;
     [SerializeField]
     private GameObject _criado;
     private ARRaycastManager _gerenciadorRayCast;
@@ -30,7 +35,10 @@ public class SpawnObject : MonoBehaviour
         if(Input.touchCount > 0)
         {
             _posicaoToque = Input.GetTouch(0).position;
-            return true;
+            if (!EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId)){
+                _posicaoToque = Input.GetTouch(0).position;
+                return true;
+            }
         }
         _posicaoToque = default;
         return false;
@@ -79,6 +87,8 @@ public class SpawnObject : MonoBehaviour
     {
         string obj = "Teste";
         string mtlObj = "Teste";
+        _loading.SetActive(true);
+        _done.SetActive(false);
         using (UnityWebRequest webRequest = UnityWebRequest.Get(uri))
         {
             // Request and wait for the desired page.
@@ -125,6 +135,8 @@ public class SpawnObject : MonoBehaviour
                 _criado.transform.position = position;
                 _criado.transform.rotation = rotation;
             }
+            _loading.SetActive(false);
+            _done.SetActive(true);
         }
 
     }
