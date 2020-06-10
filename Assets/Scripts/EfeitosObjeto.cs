@@ -38,8 +38,8 @@ public class EfeitosObjeto : MonoBehaviour
         if (_objetoCriado != null)
         {
             float tamanho = _objetoCriado.transform.localScale.x;
-            tamanho += 0.01f;
-            tamanho = Mathf.Clamp(tamanho, 0.01f, 1.0f);
+            tamanho += 0.001f;
+            tamanho = Mathf.Clamp(tamanho, 0.001f, 0.01f);
             _objetoCriado.transform.localScale = new Vector3(tamanho, tamanho, tamanho);
         }
     }
@@ -49,8 +49,8 @@ public class EfeitosObjeto : MonoBehaviour
         if (_objetoCriado != null)
         {
             float tamanho = _objetoCriado.transform.localScale.x;
-            tamanho -= 0.01f;
-            tamanho = Mathf.Clamp(tamanho, 0.01f, 1f);
+            tamanho -= 0.001f;
+            tamanho = Mathf.Clamp(tamanho, 0.001f, 0.01f);
             _objetoCriado.transform.localScale = new Vector3(tamanho, tamanho, tamanho);
         }
     }

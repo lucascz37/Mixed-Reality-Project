@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - ButtonScript
     - EfeitosObjeto
     - GetFiles
+    - LoadScene
     - SpawnObject
     - VrMode
     Unity.Rider.Editor.dll:
@@ -32,6 +33,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.InputField
     - UnityEngine.UI.Mask
     - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Scrollbar
@@ -57,57 +59,57 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11184}
+      Script: {instanceID: 11208}
     - Class: 114
-      Script: {instanceID: 11234}
+      Script: {instanceID: 11258}
     - Class: 114
-      Script: {instanceID: 11370}
+      Script: {instanceID: 11394}
     - Class: 114
-      Script: {instanceID: 11374}
+      Script: {instanceID: 11398}
     - Class: 114
-      Script: {instanceID: 11416}
+      Script: {instanceID: 11440}
     - Class: 114
-      Script: {instanceID: 11456}
+      Script: {instanceID: 11480}
     - Class: 114
-      Script: {instanceID: 11548}
+      Script: {instanceID: 11572}
     - Class: 114
-      Script: {instanceID: 11612}
+      Script: {instanceID: 11636}
     - Class: 114
-      Script: {instanceID: 11768}
+      Script: {instanceID: 11794}
     - Class: 114
-      Script: {instanceID: 11790}
+      Script: {instanceID: 11816}
     - Class: 114
-      Script: {instanceID: 11810}
+      Script: {instanceID: 11836}
     - Class: 114
-      Script: {instanceID: 11902}
+      Script: {instanceID: 11928}
     - Class: 114
-      Script: {instanceID: 12146}
+      Script: {instanceID: 12172}
     - Class: 114
-      Script: {instanceID: 12290}
+      Script: {instanceID: 12316}
     - Class: 114
-      Script: {instanceID: 12298}
+      Script: {instanceID: 12324}
     - Class: 114
-      Script: {instanceID: 12394}
+      Script: {instanceID: 12420}
     - Class: 114
-      Script: {instanceID: 12600}
+      Script: {instanceID: 12626}
     - Class: 114
-      Script: {instanceID: 12662}
+      Script: {instanceID: 12688}
     - Class: 114
-      Script: {instanceID: 12860}
+      Script: {instanceID: 12886}
     - Class: 114
-      Script: {instanceID: 12936}
+      Script: {instanceID: 12962}
     - Class: 114
-      Script: {instanceID: 12986}
+      Script: {instanceID: 13012}
     - Class: 114
-      Script: {instanceID: 13010}
+      Script: {instanceID: 13036}
     - Class: 114
-      Script: {instanceID: 13186}
+      Script: {instanceID: 13212}
     - Class: 114
-      Script: {instanceID: 13322}
+      Script: {instanceID: 13348}
     - Class: 114
-      Script: {instanceID: 13338}
+      Script: {instanceID: 13364}
     - Class: 114
-      Script: {instanceID: 13428}
+      Script: {instanceID: 13454}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -129,6 +131,59 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
     - Class: 258
+      Script: {instanceID: 0}
+    Assets/Scenes/menu.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11208}
+    - Class: 114
+      Script: {instanceID: 11394}
+    - Class: 114
+      Script: {instanceID: 11440}
+    - Class: 114
+      Script: {instanceID: 11646}
+    - Class: 114
+      Script: {instanceID: 11928}
+    - Class: 114
+      Script: {instanceID: 12420}
+    - Class: 114
+      Script: {instanceID: 12664}
+    - Class: 114
+      Script: {instanceID: 13012}
+    - Class: 114
+      Script: {instanceID: 13454}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -281,6 +336,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
     className: ARPlaneManager
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LoadScene
   - hash:
       serializedVersion: 2
       Hash: bd3cf68c8964d3c66d1c43f4f98508c9
@@ -769,5 +830,6 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 13
   scenePathNames:
+  - Assets/Scenes/menu.unity
   - Assets/Scenes/main.unity
   playerPath: "C:/Users/lucas/Documents/GitHub/Builds MRP/Build Vers\xE3o 1.apk"

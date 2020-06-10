@@ -34,7 +34,6 @@ public class SpawnObject : MonoBehaviour
     {
         if(Input.touchCount > 0)
         {
-            _posicaoToque = Input.GetTouch(0).position;
             if (!EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId)){
                 _posicaoToque = Input.GetTouch(0).position;
                 return true;
@@ -124,7 +123,7 @@ public class SpawnObject : MonoBehaviour
             var textStream = new MemoryStream(Encoding.UTF8.GetBytes(obj));
             var mtlStream = new MemoryStream(Encoding.UTF8.GetBytes(mtlObj));
             _criado = new OBJLoader().Load(textStream, mtlStream);
-            _criado.transform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
+            _criado.transform.localScale = new Vector3(0.005f, 0.005f, 0.005f);
             _gameManager.ObjetoCriado = _criado;
             if (nulo)
             {
