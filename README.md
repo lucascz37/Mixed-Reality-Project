@@ -1,4 +1,4 @@
-#Projeto de Realidade Mista.
+# Projeto de Realidade Mista.
 	Software desenvolvido com o intuito de criar objetos 3d em tempo de execução, através de requisições para um servidor.
 
 ## Screenshots
